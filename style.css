@@ -1,0 +1,362 @@
+/* styles.css */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+html, body {
+  scroll-behavior:smooth;
+  scroll-padding-top: 0; /* Ensure there is no padding at the top when scrolling */
+}
+
+/* General styles */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EDF5FC;
+  color: #272d2d;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-image: url("images/the_mice.jpeg"); /* Replace "path/to/your/image.jpg" with the actual path to your image */
+  background-size: cover;
+  height: 75vh;
+  background-color: #272d2d;
+  color: #EDF5FC;
+  padding: 20px;
+  text-align: center; /* Center-align the contents of the header */
+}
+
+header h1 {
+  margin: 0px;
+  font-size: 50px; /* Increase the font size for your name */
+}
+
+header h2 {
+  margin: 0.1rem;
+  font-size: 26px;
+}
+
+header a {
+  font-size:24px;
+  color: #EDF5FC; /* Set the color of the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+header a:hover {
+  text-decoration: underline dotted; /* Add underline on hover */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2.5rem;
+  font-size: 28px;
+  display: flex;
+  justify-content: center; /* Center-align the bullet points in the middle */
+}
+
+nav ul li {
+  display: inline;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #272d2d;
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent; /* Set the initial background color to transparent */
+  padding: 15px 40px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  border-radius: 5px; /* Adjust the radius as needed */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  background-color: rgba(184, 197, 214, 0.5); /* Change background color on hover */
+}
+
+section {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-top: 4rem;
+  font-size: 36px;
+  text-align: center;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  font-size: 28px;
+  text-align: center;
+}
+
+section ul {
+  list-style-position: inside;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 0px;
+  text-align: justify; /* Center-align the bullet points in the middle */
+  list-style-type: square;
+  font-size: 20px;
+}
+
+a {
+  font-size:24px;
+  color: #A39BA8; /* Set the color of the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+footer {
+  background-color: #EDF5FC;
+  color: #272d2d;
+  padding: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr; /* Two columns with equal width */
+  align-items: start; /* Align items at the start (top) of the container */
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 20px;
+}
+
+.about-image img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 100%;
+  margin-left: auto;
+  padding-left: 30px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.about-text h2 {
+  margin-top: 0rem;
+  font-size: 36px;
+  text-align: center;
+}
+
+.about-text a {
+  font-size:18px;
+  color: #A39BA8; /* Set the color of the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+.about-text a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.research-section {
+  max-width: 70%; /* Adjust the max-width to control the width of the paragraph */
+  margin: 0 auto; /* Center the paragraph within the container */
+  text-align: justify; /* Justify the text */
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-top: 0rem; /* Add top margin for separation */
+}
+
+.pub-text {
+  max-width: 100%;
+  margin-left: auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.pub-text h3 {
+  margin-top: 0rem;
+  font-size: 26px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.author-line {
+  font-size: 14px; 
+  text-align: center;
+}
+
+.journal-line {
+  font-size: 18px; 
+}
+
+.abstract {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  align-items: center; /* Align items at the start (top) of the container */
+  margin: 0 auto;
+  padding-left: 45%;
+  padding-right: 45%;
+}
+
+.abstract-text a {
+  max-width: 100%;
+  font-size:24px;
+  color: #A39BA8; /* Set the color of the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+.abstract-text a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.abstract-image img{
+  max-width: 90%;
+  align-items: center;
+}
+
+.data-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  align-items: start; /* Align items at the start (top) of the container */
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+.data-text {
+  max-width: 100%;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.data-text h2 {
+  margin-top: 0rem;
+  font-size: 36px;
+  text-align: center;
+}
+
+.data-text h3 {
+  margin-top: 0rem;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Add a new class for the media section */
+.media-section {
+  max-width: 70%; /* Adjust the max-width to control the width of the content */
+  margin: 0 auto; /* Center the content within the container */
+  text-align: justify; /* Center-align the text */
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-top: 2rem; /* Add top margin for separation */
+}
+
+/* Customize the header within the media section */
+.media-section h2 {
+  font-size: 36px; /* Adjust the font size for the header */
+  color: #272d2d; /* Set the color of the header */
+  text-align: center;
+}
+
+/* Customize the third-order header within the media section */
+.media-section h3 {
+  font-size: 28px; /* Adjust the font size for the third-order header */
+  color: #272d2d; /* Set the color of the third-order header */
+  text-align: center;
+  text-decoration: underline; /* Add underline to the third-order header */
+}
+
+/* Add a new class for external links within the Media section */
+.media-section a {
+  max-width: 100%;
+  font-size:20px;
+  color: #A39BA8; /* Set the color of the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+.media-section a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+.contact-image img{
+  width: 50px; /* Adjust the width of the icon */
+  height: 50px; /* Adjust the height of the icon */
+  transition: transform 0.3s ease; /* Updated transition property */
+}
+
+.contact-image img:hover{
+  transform: scale(1.2);
+}
+
+/* Home button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: transparent;
+  color: #272D2D;
+  border: none;
+  width: 50px; /* Adjust the width of the circle */
+  height: 50px; /* Adjust the height of the circle */
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%; /* Make it a perfect circle */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Updated transition property */
+
+}
+
+#scrollToTopBtn img {
+  width: 50px; /* Adjust the width of the icon */
+  height: 50px; /* Adjust the height of the icon */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+#scrollToTopBtn:hover {
+  background-color: rgba(184, 197, 214, 0.5);
+  width: 50px; /* Adjust the width of the circle */
+  height: 50px; /* Adjust the height of the circle */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  transform: scale(1.2);
+}
+
+/* Horizontal Line */
+hr {
+  border: 1px solid #272D2D; /* Set the color of the line */
+  margin: 2.5% 5%; /* Add some spacing above and below the line */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;/* On smaller screens, switch to a single column */
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    align-self: flex-start; /* Align the text at the start (top) of the container */
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+}
