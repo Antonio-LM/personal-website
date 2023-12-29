@@ -27,16 +27,17 @@ body {
 header {
   background-image: url("images/the_mice.jpeg"); /* Replace "path/to/your/image.jpg" with the actual path to your image */
   background-size: cover;
-  height: 75vh;
+  height: 70vh;
   background-color: #272d2d;
   color: #EDF5FC;
   padding: 20px;
-  text-align: center; /* Center-align the contents of the header */
+  text-align: bottom; /* Center-align the contents of the header */
 }
 
 header h1 {
   margin: 0px;
   font-size: 50px; /* Increase the font size for your name */
+  margin-top: 27rem;
 }
 
 header h2 {
@@ -58,6 +59,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 2.5rem;
+  margin-bottom: 5rem;
   font-size: 28px;
   display: flex;
   justify-content: center; /* Center-align the bullet points in the middle */
@@ -79,7 +81,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   background-color: rgba(184, 197, 214, 0.5); /* Change background color on hover */
 }
 
@@ -135,7 +137,7 @@ footer {
   align-items: start; /* Align items at the start (top) of the container */
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 20px;
 }
 
@@ -197,32 +199,30 @@ footer {
 }
 
 .journal-line {
-  font-size: 18px; 
-}
-
-.abstract {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-  align-items: center; /* Align items at the start (top) of the container */
+  font-size: 20px; 
+  align-items: left; /* Align items at the start (top) of the container */
   margin: 0 auto;
-  padding-left: 45%;
-  padding-right: 45%;
 }
 
-.abstract-text a {
+.journal-line a {
   max-width: 100%;
-  font-size:24px;
+  font-size:20px;
   color: #A39BA8; /* Set the color of the link */
   text-decoration: none; /* Remove the underline */
 }
 
-.abstract-text a:hover {
+.journal-line a:hover {
   text-decoration: underline; /* Add underline on hover */
 }
 
-.abstract-image img{
-  max-width: 90%;
-  align-items: center;
+.journal-line img{
+  max-width: 25px;
+  align-items: left;
+  transition: transform 0.3s ease; /* Updated transition property */
+}
+
+.journal-line img:hover{
+  transform: scale(1.5);
 }
 
 .data-section {
